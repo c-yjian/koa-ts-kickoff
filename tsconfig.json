@@ -10,7 +10,10 @@
     "target": "es6",
     "sourceMap": false,
     "outDir": "./dist",
-    "baseUrl": "./"
+    "baseUrl": "./",
+    "paths": {
+      "@service/*": ["./src/service/*"],
+    }
   },
   "exclude": ["node_modules"]
 }

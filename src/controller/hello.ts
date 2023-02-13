@@ -1,4 +1,4 @@
-import HelloService from '../service//hello';
+import HelloService from '@service/hello';
 class HelloController {
   private service: HelloService = new HelloService();
 
