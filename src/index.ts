@@ -1,8 +1,8 @@
-import * as Koa from 'koa';
-import * as path from 'path';
-import * as koaStatic from "koa-static";
+import Koa from 'koa';
+import path from 'path';
+import koaStatic from "koa-static";
 import { koaBody } from 'koa-body';
-import * as parameter from 'koa-parameter';
+import parameter from 'koa-parameter';
 import globalExceptionHandler from './middleware/exceptions';
 import router from './router';
 
