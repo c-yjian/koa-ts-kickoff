@@ -6,6 +6,7 @@ import * as parameter from 'koa-parameter';
 import globalExceptionHandler from './middleware/exceptions';
 import router from './router';
 
+console.log(`当前环境: ${process.env.NODE_ENV}`);
 // koa应用
 const app = new Koa();
 // 注册中间件

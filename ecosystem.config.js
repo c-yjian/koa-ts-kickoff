@@ -1,7 +1,8 @@
 // pm2 配置文件，可运行 pm2 init生成该配置文件
 const { name } = require('./package.json');
 const path = require('path');
-
+const NODE_ENV = process.env.NODE_ENV;
+console.log(`NODE_ENV: ${NODE_ENV}`);
 module.exports = {
   apps: [
     // 数组中每一项都是运行在pm2中的一个应用
@@ -18,7 +19,7 @@ module.exports = {
       // 是否启用监控模式，默认是false。如果设置成true，当应用程序变动时，pm2会自动重载。这里也可以设置你要监控的文件
       watch: true,
       env_production: {
-        NODE_ENV: 'production',
+        NODE_ENV,
         PORT: 8080
       },
     }

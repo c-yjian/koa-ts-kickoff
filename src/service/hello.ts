@@ -1,5 +1,7 @@
-export default class HelloService {
+import Base from "./base";
+
+export default class HelloService extends Base {
   hello = () => {
-    return 'hello koa ts world ~';
+    return this.success('hello koa ts world ~');
   };
 }
